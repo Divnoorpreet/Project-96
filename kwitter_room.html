@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Kwitter room page</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="login">
+        <button class="logout" onclick="logout()">Logout</button>
+        <center>
+            <h1 id="header1">Kwitter</h1>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 Room_name">
+                <img id="img" src="image.png">
+                <h3 id="user_name"></h3>
+                <br>
+                <input id="room_name" placeholder="Enter room name">
+                <br><br>
+                <button id="add_room" onclick="addroom()">Add room</button>
+                <br><br>
+            </div>
+            <br><br>
+            <h3 id="t">Trending room</h3>
+            <div id="output"></div>
+        </center>
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>

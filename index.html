@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Kwitter</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="login">
+        <center>
+            <h1 id="header">Kwitter</h1>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11" id="login_name">
+                <img style="width: 100px;margin-top: 50px;border-radius: 60px;"src="image.png">
+                <h4>Login here</h4>
+                <h5>See what is happening in the world</h5>
+                <h5>Join Kwitter now</h5>
+                <input id="user_name" type="text" placeholder="Enter user name">
+                <br><br>
+                <button style="background-color:whitesmoke; color:black;" id="adduser" onclick="adduser()">Login</button>
+                <br><br>
+            </div>
+        </center>
+        <script src="kwitter.js"></script>
+    </body>
+</html>
